@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    package="com.calibrage.a3ffarmerapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tool:replace="android:allowBackup"
+        >
+        <activity android:name=".Activities.GetRecommendationByAges"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Activities.GetRecommendationsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.ScannnerOtpActivity" />
+        <activity
+            android:name=".Activities.InsideLanguageActivity"
+            android:parentActivityName=".Activities.PoleActivity" />
+        <activity android:name=".Activities.YoutubePlayerActivity" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.BasicPlayerActivity" />
+        <activity
+            android:name=".Activities.LabourRecommendationsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Testactivity" />
+        <activity
+            android:name=".Activities.MyReqDeatilsActivity"
+            android:parentActivityName=".Activities.PoleActivity" />
+        <activity
+            android:name=".Activities.RequestVisitDailogActivity"
+            android:parentActivityName=".Activities.PoleActivity" />
+        <activity
+            android:name=".Activities.RecommendationListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.FertilizerRecomendations"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.EncyclopediaActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".Activities.PoleActivity" />
+        <activity
+            android:name=".Activities.RequestVisitActivity"
+            android:parentActivityName=".Activities.PoleActivity" />
+        <activity
+            android:name=".Activities.PaymentSummaryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.PdfViewerActivity" />
+        <activity
+            android:name=".Activities.PaymentHistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.PaymentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.QuickPayActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.PlayerActivity" />
+        <activity
+            android:name=".Activities.FertilizerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.OrderPlacedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.PoleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.LabourActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.LoanActivity"
+            android:parentActivityName=".Activities.PoleActivity" />
+        <activity
+            android:name=".Activities.VisitActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.RecommendationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.CollectionsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.SideMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.LanguageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.ScannerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.OtpActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".Activities.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

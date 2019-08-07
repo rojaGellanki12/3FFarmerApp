@@ -1,0 +1,218 @@
+<resources>
+
+    <string name="app_name">3F Farmer App</string>
+    <string name="turn_off_flashlight">FlashLight on</string>
+    <string name="turn_on_flashlight">flashLight off</string>
+    <string name="title_activity_main">QR and Barcode Scanner</string>
+    <string name="message">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="ok">OK</string>
+    <string name="videos">Videos</string>
+    <string name="doc">Documents</string>
+    <string name="scan_farmer_id">Click here for Scan Farmer QR Code</string>
+    <string name="farmerid">Enter Farmer Id</string>
+    <string name="cancel">Cancel</string>
+    <string name="plotidName">Plot Id:</string>
+    <string name="plotid">Plot252019 </string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="terms_agree">Please agree terms&amp;\n conditions</string>
+    <string name="success">Success</string>
+    <string name="agree">Agree</string>
+    <string name="otp_desc">Enter the 6 digits code sent your registered mobile number</string>
+    <string name="resend_otp"><u>Resend Otp</u></string>
+    <string name="submit">Submit</string>
+    <string name="submit_req">Submit Request</string>
+    <string name="view">View</string>
+    <string name="view_recommendations">View Recomendations</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="total_net_weight">Total Net weight</string>
+    <string name="Collections">Collections</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="recommended_by">Recommended By</string>
+    <string name="recommended_on">Recommended On</string>
+    <string name="payments">Payments</string>
+    <string name="view_pay">View Payments</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="bank_holder">Account Holder \nName</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="bank_ac_no">Bank Account Number:</string>
+    <string name="bank_ac_holder">Bank Holder Number:</string>
+    <string name="account_no">Account Number</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="ifsc">IFSC Code</string>
+    <string name="next">Next</string>
+    <string name="ledger_item">Ledger Item:</string>
+    <string name="dop">Date of payment:</string>
+
+    <string name="Recommend">Recommendations</string>
+    <string name="req_services">Request Services</string>
+    <string name="labour">Labour</string>
+    <string name="labour_duration">Labour Duration</string>
+    <string name="rate">Rate</string>
+    <string name="amount_of_FFB">Amount of FFB</string>
+    <string name="labour_charges">Labour charges </string>
+    <string name="pole_charges">Pole charges</string>
+    <string name="convenience_charge">Convenience \n Charge</string>
+    <string name="total_amt_pay">Total amount \n payable</string>
+    <string name="confirm_req">Confirm Request</string>
+    <string name="frquency">Frquency</string>
+    <string name="pole">Pole</string>
+    <string name="fertilizer">Fertilizer\n</string>
+    <string name="uoM">uoM</string>
+    <string name="loan">Loan</string>
+    <string name="quickPay">Quick Pay</string>
+    <string name="visit">Visit</string>
+    <string name="req_visit">Request a Visit</string>
+    <string name="learning">Learning</string>
+    <string name="knowledge_zone">Knowledge\n Zone</string>
+    <string name="knowledge">Knowledge zone</string>
+    <string name="collection_center">Collection \n Center</string>
+    <string name="collection_center_name">Collection  Center</string>
+    <string name="fertilizer_center_name">Fertilizer Center</string>
+    <string name="fertilizer_center">Fertilizer \n Center</string>
+    <string name="category1">Category1</string>
+    <string name="category2">Category2</string>
+    <string name="category3">Category3</string>
+    <string name="encyclopaedia">Encyclopaedia</string>
+    <string name="custom_msg">Custom Message to be displayed here</string>
+    <string name="name">Ramu</string>
+    <string name="time_peroid">Time Peroid</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="collection_id">Collection ID:</string>
+    <string name="date">Select Date</string>
+    <string name="weight">Weight:</string>
+    <string name="cc">CC:</string>
+    <string name="status">Status:</string>
+    <string name="terms">Terms and conditions</string>
+    <string name="req_loan">Request for loan</string>
+    <string name="loan_msg">Request received and someone will contact you soon</string>
+    <string name="plot_id">Plot ID:</string>
+    <string name="plot_size">Plot Size:</string>
+    <string name="confirm">Confirm</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="village">Village</string>
+    <string name="comments">Comments</string>
+    <string name="issue_identified">Issue Identified</string>
+    <string name="time">Select Time</string>
+    <string name="plot_code">Plot Code</string>
+    <string name="recommendedorfertilizer">Recommended\nFertilizer/Chemical</string>
+    <string name="dosage">Dosage(UOM)</string>
+    <string name="age">Age</string>
+    <string name="area">Area</string>
+    <string name="download">Download</string>
+    <string name="select_labour_type">Select Labour type</string>
+    <string name="fertilizer1">Fertilizer1</string>
+    <string name="fertilizer2">Fertilizer2</string>
+    <string name="fertilizer3">Fertilizer3</string>
+    <string name="req_deatils">Request Deatils</string>
+    <string name="date_n_time">Date &amp; Time \n Of submission</string>
+    <string name="req_date">Requested Date</string>
+    <string name="aprove_date">Aproved Date</string>
+    <string name="staus">Status</string>
+    <string name="name_field">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="net_weight">Net weight</string>
+    <string name="date_label">Date:</string>
+    <string name="location">Location:</string>
+    <string name="pin">Pin</string>
+    <string name="collection">Collection</string>
+    <string name="land_mark">Landmark:</string>
+    <string name="select_collection">Select for which Collections need payment</string>
+    <string name="show">More Information</string>
+    <string name="hide">Less information</string>
+    <string name="profile_name">John Doe</string>
+    <string name="size">size</string>
+    <string name="landmark">landmark</string>
+    <string name="select_godown">Select Godown</string>
+    <string name="select_plot_type">Select Plot Code</string>
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>My Requests</item>
+        <item>Choose Language</item>
+    </array>
+    <string name="choose_language">Choose Language</string>
+    <string name="language_notification">Language Setup Completed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="i_have_agree_terms_conditions">I have agree terms &amp; Conditions</string>
+    <string name="long_content">Lorem ipsum dolor sit amet...</string>
+    <string name="log_off">Log out</string>
+    <string name="tap_text">Please select language below:</string>
+    <string name="btn_en">English</string>
+    <string name="btn_te">Telugu</string>
+    <string name="labour_request">Labour Request</string>
+    <string name="fertilizer_request">Fertilizer Request</string>
+    <string name="my_requests">My Requests</string>
+    <string name="only_date">Date</string>
+    <string name="only_time">Time</string>
+    <string name="datentime">Date&amp;Time of submission</string>
+    <string name="approve_date">Approve Date</string>
+    <string name="only_status">Status</string>
+    <string name="total_rs">Total RS:</string>
+    <string name="Rs">\u20B9</string>
+    <string name="collections_total">Collections by total Rate\n from 2nd march to 3rd june:</string>
+    <string name="rate_adjustment">Rate Adjustment:</string>
+    <string name="transport_payment">Transport Payment:</string>
+    <string name="no_videos">No Videos</string>
+
+    <string name="thumbnail_image_view_desc">Youtube Video thumbnail image view</string>
+    <string name="close_player_activity">Close Player activity</string>
+    <!--  <string name="harvest">Harvest</string>-->
+    <string name="pest_n_disease">Pest and Disease</string>
+    <string name="general_info">General Information</string>
+    <string name="harvest">Harvest</string>
+    <string name="remarks">Remarks</string>
+    <string name="quantity">Quantity</string>
+
+    <string name="ffb_qty">FFB Qty(MT)</string>
+    <string name="adhoc_rate">Adhoc Rate per MT Rs.</string>
+    <string name="invoice_rate">Invoice Rate Per MT</string>
+    <string name="gr_amount">GR Amount</string>
+   <string name="memo">Memo</string>
+    <string name="amount">Amount</string>
+
+
+
+
+    <!--  we need to use video ids instead of video link  -->
+    <string-array name="video_id_array">
+        <item>CqhpNxI8qYw</item>
+        <item>sasCrpgHDy8</item>
+        <item>iJeh3x09Ya8</item>
+        <item>B5zRaD7B504</item>
+        <item>9qWHzj8k-Uo</item>
+        <item>RjiK45wC924</item>
+        <item>RH3zaLO8H4E</item>
+        <item>o14pyzosjvk</item>
+        <item>5SQrpBQne7A</item>
+        <item>5WJ3r67ORxo</item>
+    </string-array>
+
+    <string-array name="video_title_array">
+        <item>Android Security Lock Demo</item>
+        <item>Android Sectioned RecyclerView Demo</item>
+        <item>Android Home Screen Widgets Demo</item>
+        <item>Android Floating Widget like Facebook Messenger Chat Head Demo</item>
+        <item>Android Google Maps Introduction Demo</item>
+        <item>Android Lollipop Activity Transitions Demo</item>
+        <item>Android Toolbar Animation Using Design Support Library Demo</item>
+        <item>Android Material Advance Tabs Demo</item>
+        <item>Android Drag and Drop Demo</item>
+        <item>Android Fingerprint Authentication Demo</item>
+    </string-array>
+
+    <string-array name="video_duration_array">
+        <item>02:48</item>
+        <item>00:44</item>
+        <item>01:01</item>
+        <item>00:55</item>
+        <item>01:03</item>
+        <item>00:25</item>
+        <item>00:34</item>
+        <item>00:45</item>
+        <item>00:52</item>
+        <item>00:28</item>
+    </string-array>
+</resources>

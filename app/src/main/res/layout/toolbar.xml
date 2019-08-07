@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+   >
+
+</androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/logo" />
+    <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+
+      android:layout_toRightOf="@+id/imageView3"
+
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textAlignment="center"
+        android:textStyle="bold" android:padding="11dp"
+
+        android:layout_margin="3dp"/>
+</RelativeLayout>

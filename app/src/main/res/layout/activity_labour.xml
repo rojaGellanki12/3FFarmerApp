@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LabourActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_l"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:id="@+id/back"/>
+
+        <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/labour"
+            android:textStyle="bold"
+            android:layout_marginStart="-10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/relative1">
+
+        <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+            android:id="@+id/plotIdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/album_title_padding"
+            android:paddingRight="@dimen/album_title_padding"
+            android:paddingTop="@dimen/album_title_padding"
+            android:text="@string/age"
+            android:textColor="@color/album_title"
+            android:textSize="17sp" />
+        <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+            android:id="@+id/plotId"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/plotIdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/album_title_padding"
+            android:paddingRight="@dimen/album_title_padding"
+            android:paddingTop="@dimen/album_title_padding"
+            android:hint="25"
+            android:textSize="17sp"
+            />
+
+        <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+            android:id="@+id/palmAreaLabel"
+
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/village"
+            android:textSize="17sp"
+            android:layout_below="@id/plotId"
+            android:paddingLeft="@dimen/album_title_padding"
+            android:paddingRight="@dimen/album_title_padding"
+            android:paddingTop="@dimen/album_title_padding"
+            android:textColor="@color/album_title"
+           />
+        <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+            android:id="@+id/palmArea"
+            android:layout_toRightOf="@+id/palmAreaLabel"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Chinnakoduru"
+            android:textSize="17sp"
+            android:layout_below="@id/plotId"
+            android:paddingLeft="@dimen/album_title_padding"
+            android:paddingRight="@dimen/album_title_padding"
+            android:paddingTop="@dimen/album_title_padding"
+            />
+    </RelativeLayout>
+   <LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+ android:layout_below="@+id/relative1"
+       android:layout_margin="@dimen/margin_10">
+       <!--<fr.ganfra.materialspinner.MaterialSpinner
+           android:id="@+id/spinner"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:ms_multiline="false"
+           app:ms_dropDownHintView="@layout/dropdown_hint_item"
+           app:ms_hintView="@layout/hint_item"
+           app:ms_hint="Plot Id"
+           app:ms_enableFloatingLabel="true"
+           app:ms_enableErrorLabel="true"
+           app:ms_floatingLabelText="Plot Id"
+           app:ms_highlightColor="@color/green"
+           app:ms_errorColor="@color/blue"
+           app:ms_thickness="0.5dp"
+           app:ms_hintColor="@color/black"
+           app:ms_arrowColor="@color/black"
+           app:ms_arrowSize="16dp"
+           app:ms_alignLabels="true"
+           app:ms_floatingLabelColor="@color/black"/>-->
+    <!--   <Spinner
+           android:id="@+id/selection_plots"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:textStyle="bold"
+           android:prompt="@string/plot_id"
+           android:theme="@style/ThemeOverlay.AppCompat.Light"
+           android:spinnerMode="dropdown"
+           android:textAlignment="center"
+           android:background="@android:drawable/btn_dropdown"
+           />-->
+
+     <!--  <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Age"
+           >
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="text"
+               android:id="@+id/age"
+               android:maxLines="1" />
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Village">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="text"
+               android:maxLines="1"
+               android:id="@+id/village"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+-->
+       <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+           android:id="@+id/textView5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/select_labour_type"
+           android:textSize="@dimen/text_size_16"
+           android:layout_marginStart="6dp"
+          />
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:background="@drawable/spinner_bg"
+           android:layout_marginTop="10dp"
+           android:layout_margin="8dp"
+           android:elevation="2dp">
+           <com.calibrage.a3ffarmerapp.Activities.MultiSelectionSpinner
+               android:id="@+id/spinner"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:ms_multiline="false"
+               android:padding="@dimen/margin_10"
+               app:ms_dropDownHintView="@layout/dropdown_hint_item"
+               app:ms_hintView="@layout/hint_item"
+               app:ms_hint="@string/select_labour_type"
+               app:ms_enableFloatingLabel="true"
+               app:ms_enableErrorLabel="true"
+               app:ms_floatingLabelText="@string/select_labour_type"
+               app:ms_thickness="0.5dp"
+               app:ms_highlightColor="@color/green"
+               app:ms_errorColor="@color/blue"
+               app:ms_hintColor="@color/black"
+               app:ms_arrowColor="@color/black"
+               app:ms_arrowSize="16dp"
+               app:ms_alignLabels="true"
+               android:background="@null"
+               android:minHeight="0dp"
+               app:ms_floatingLabelColor="@color/black"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentRight="true"
+               android:src="@drawable/ic_arrow_drop_down" />
+       </RelativeLayout>
+
+
+       <com.calibrage.a3ffarmerapp.Activities.CommonEditText
+           android:id="@+id/date_display"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:layout_marginStart="8dp"
+           android:layout_marginEnd="@dimen/_8dp"
+           android:focusable="false"
+
+           android:editable="false"
+           android:inputType="textPersonName"
+           android:hint="@string/date" />
+
+      <!-- <EditText
+           android:id="@+id/time"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:hint="@string/time"
+           android:editable="false"
+           android:textAlignment="center"/>-->
+
+       <fr.ganfra.materialspinner.MaterialSpinner
+           android:id="@+id/labour_duration"
+           android:layout_marginStart="8dp"
+           android:layout_marginEnd="@dimen/_8dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:ms_multiline="false"
+           app:ms_dropDownHintView="@layout/dropdown_hint_item"
+           app:ms_hintView="@layout/hint_item"
+           app:ms_hint="@string/labour_duration"
+           app:ms_enableFloatingLabel="true"
+           app:ms_enableErrorLabel="true"
+           app:ms_floatingLabelText="@string/labour_duration"
+           app:ms_thickness="0.5dp"
+           app:ms_highlightColor="@color/green"
+           app:ms_errorColor="@color/blue"
+           app:ms_hintColor="@color/black"
+           app:ms_arrowColor="@color/black"
+           app:ms_arrowSize="16dp"
+           android:layout_marginTop="-10dp"
+           app:ms_alignLabels="true"
+           app:ms_floatingLabelColor="@color/black"/>
+       <fr.ganfra.materialspinner.MaterialSpinner
+           android:id="@+id/frequency"
+           android:layout_marginStart="8dp"
+           android:layout_marginEnd="@dimen/_8dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:ms_multiline="false"
+           app:ms_dropDownHintView="@layout/dropdown_hint_item"
+           app:ms_hintView="@layout/hint_item"
+           app:ms_hint="@string/frquency"
+       app:ms_enableFloatingLabel="true"
+       app:ms_enableErrorLabel="true"
+       app:ms_floatingLabelText="@string/frquency"
+       app:ms_thickness="0.5dp"
+           android:layout_marginTop="-10dp"
+       app:ms_highlightColor="@color/green"
+       app:ms_errorColor="@color/blue"
+       app:ms_hintColor="@color/black"
+       app:ms_arrowColor="@color/black"
+
+       app:ms_arrowSize="16dp"
+       app:ms_alignLabels="true"
+       app:ms_floatingLabelColor="@color/black"/>
+       <!--app:ms_hint="@string/frquency"-->
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/comments">
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:inputType="text"
+           android:maxLines="1" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <com.calibrage.a3ffarmerapp.Activities.CommonButton
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/submit_req"
+       android:shadowColor="@android:color/transparent"
+       android:padding="15dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="10dp"
+
+
+       android:layout_marginBottom="10dp"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/shapescanbtn"
+       android:textColor="@color/white"
+       android:id="@+id/buttonSubmit"
+       android:textStyle="bold"
+       android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"/>
+
+
+   <!--<LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:background="#FFFFFF"
+       android:orientation="horizontal">
+       <Button
+           android:id="@+id/plotId"
+           android:layout_width="0dp"
+           android:layout_height="70dp"
+           android:layout_gravity="left"
+           android:layout_weight="1"
+           android:textStyle="bold"
+           android:text="@string/plot_id"
+           android:background="@drawable/rectangular_shape_with_yellow_bg"/>
+
+       <Spinner
+           android:id="@+id/selection_plots"
+           android:layout_width="0dp"
+           android:layout_height="70dp"
+           android:layout_gravity="right"
+           android:layout_weight="1"
+           android:textStyle="bold"
+           android:theme="@style/ThemeOverlay.AppCompat.Light"
+           android:spinnerMode="dropdown"
+           android:background="@drawable/rectangle_shape_border"
+          />
+       &lt;!&ndash;<Spinner
+           android:id="@+id/spinner"
+           android:layout_width="0dp"
+           android:layout_height="70dp"
+           android:layout_gravity="right"
+           android:layout_weight="1"
+           android:background="@drawable/rectangle_shape_border"/>&ndash;&gt;
+   </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#FFFFFF"
+          android:orientation="horizontal">
+          <Button
+              android:id="@+id/age"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="left"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:text="age"
+              android:background="@drawable/rectangular_shape_with_yellow_bg"/>
+
+          <Button
+              android:id="@+id/age_display"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="right"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:background="@drawable/rectangle_shape_border"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#FFFFFF"
+          android:orientation="horizontal">
+          <Button
+              android:id="@+id/village"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="left"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:text="village"
+              android:background="@drawable/rectangular_shape_with_yellow_bg"/>
+
+          <Button
+              android:id="@+id/village_display"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="right"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:background="@drawable/rectangle_shape_border"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#FFFFFF"
+          android:orientation="horizontal">
+          <Button
+              android:id="@+id/date"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="left"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:text="date"
+              android:background="@drawable/rectangular_shape_with_yellow_bg"/>
+
+          <EditText
+              android:id="@+id/date_display"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="right"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:clickable="true"
+              android:editable="false"
+              android:hint="Select date"
+              android:gravity="center"
+              android:background="@drawable/rectangle_shape_border"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#FFFFFF"
+          android:orientation="horizontal">
+          <Button
+              android:id="@+id/time"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="left"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:text="time"
+              android:background="@drawable/rectangular_shape_with_yellow_bg"/>
+
+          <Button
+              android:id="@+id/time_display"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="right"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:background="@drawable/rectangle_shape_border"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#FFFFFF"
+          android:orientation="horizontal">
+          <Button
+              android:id="@+id/comment"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="left"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:text="comments"
+              android:background="@drawable/rectangular_shape_with_yellow_bg"/>
+
+          <EditText
+              android:id="@+id/comment_input"
+              android:layout_width="0dp"
+              android:layout_height="70dp"
+              android:layout_gravity="right"
+              android:layout_weight="1"
+              android:textStyle="bold"
+              android:background="@drawable/rectangle_shape_border"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#FFFFFF"
+          android:layout_marginTop="@dimen/margin_20"
+          android:orientation="horizontal">
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/checkBox"
+              android:text="@string/submit_req"
+              android:shadowColor="@android:color/transparent"
+              android:padding="15dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginBottom="10dp"
+              android:layout_marginTop="0dp"
+              android:background="@drawable/shapescanbtn"
+              android:textColor="@color/white"
+              android:id="@+id/req_loan"
+              android:textStyle="bold"
+              android:textSize="@dimen/text_size_15"/>
+
+      </LinearLayout>-->
+   </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+    </FrameLayout>
+</RelativeLayout>

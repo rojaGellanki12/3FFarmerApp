@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PaymentHistoryActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/backlinear"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_l"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:id="@+id/back"/>
+
+        <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/payments"
+            android:textStyle="bold"
+            android:layout_marginStart="-10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15"
+        android:id="@+id/relative2"
+        android:layout_below="@+id/backlinear"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="@dimen/margin_15"
+            android:id="@+id/linear2"
+
+            >
+
+
+            <EditText
+                android:id="@+id/from_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:focusable="false"
+                android:hint="@string/from_date"
+                />
+            <androidx.legacy.widget.Space
+                android:layout_width="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/to_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:ems="10"
+                android:hint="@string/to_date" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_below="@+id/linear2"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/shapescanbtn"
+            android:textColor="@color/white"
+            android:id="@+id/buttonSubmit"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"/>
+
+    </RelativeLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/linear1"
+        android:layout_margin="@dimen/margin_15"
+        android:id="@+id/linear2"
+        android:visibility="gone"
+        >
+
+
+        <EditText
+            android:id="@+id/from_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:focusable="false"
+            android:hint="@string/from_date"
+            />
+        <androidx.legacy.widget.Space
+            android:layout_width="@dimen/margin_15"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/to_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="10"
+            android:hint="@string/to_date" />
+    </LinearLayout>
+    <!-- <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/submit"
+         android:shadowColor="@android:color/transparent"
+         android:padding="15dp"
+         android:layout_below="@+id/linear2"
+         android:layout_marginRight="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginBottom="10dp"
+         android:layout_marginTop="0dp"
+         android:background="@drawable/shapescanbtn"
+         android:textColor="@color/white"
+         android:id="@+id/buttonScan"
+         android:textStyle="bold"
+         android:visibility="gone"
+         android:textSize="@dimen/text_size_15"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/relative2"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:text="No Data Found"
+        android:layout_marginTop="@dimen/text_size_20"
+        android:textSize="@dimen/text_size_20"
+        android:textColor="@color/colorAccent"
+        android:layout_centerInParent="true"
+        />
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear"
+            android:layout_alignParentBottom="true">
+
+            <com.calibrage.a3ffarmerapp.Activities.CommonButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/download"
+                android:id="@+id/confirm"
+                android:textColor="@color/white"
+                android:background="@color/green"/>
+
+            />
+        </LinearLayout>
+    </LinearLayout>-->
+</RelativeLayout>
+
+<!--
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PaymentHistoryActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_l"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:id="@+id/back"/>
+
+        <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/payments"
+            android:textStyle="bold"
+            android:layout_marginStart="-10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear2"
+        android:layout_below="@+id/linear1"
+        android:weightSum="1">
+
+      &lt;!&ndash;  <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_peroid"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_size_22"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin_10"
+            />&ndash;&gt;
+      &lt;!&ndash;  <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:prompt="@string/spinner_title"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@android:drawable/btn_dropdown"
+            />&ndash;&gt;
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner_bg"
+            android:layout_marginTop="10dp"
+            android:layout_margin="8dp"
+            android:elevation="2dp">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:background="@null"
+                android:minHeight="0dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_drop_down" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/linear2"
+        android:layout_margin="@dimen/margin_15"
+        android:id="@+id/linear3"
+
+        >
+
+
+        <com.calibrage.a3ffarmerapp.Activities.CommonEditText
+            android:id="@+id/from_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:hint="From Date"
+            />
+        <androidx.legacy.widget.Space
+            android:layout_width="@dimen/margin_15"
+            android:layout_height="wrap_content"
+            />
+        <com.calibrage.a3ffarmerapp.Activities.CommonEditText
+            android:id="@+id/to_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="To Date" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear2">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view"
+            android:layout_marginBottom="60dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/linear"
+                android:layout_alignParentBottom="true">
+
+                <com.calibrage.a3ffarmerapp.Activities.CommonButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/download"
+                    android:id="@+id/confirm"
+                    android:textColor="@color/white"
+                    android:background="@color/green"/>
+
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    &lt;!&ndash;<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view"
+            android:paddingBottom="100dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/download"
+            android:id="@+id/confirm"
+            android:textColor="@color/white"
+            android:background="@color/green"/>
+
+
+    </LinearLayout>&ndash;&gt;
+
+
+</RelativeLayout>-->

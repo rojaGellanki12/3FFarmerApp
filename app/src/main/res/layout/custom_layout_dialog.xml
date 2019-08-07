@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/comments"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+    <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+        android:id="@+id/plotIdLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/plotidName"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textSize="@dimen/text_size_20"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+       />
+        <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+            android:id="@+id/plotId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plotid"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textSize="@dimen/text_size_20"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+    <com.calibrage.a3ffarmerapp.Activities.CommonEditText
+        android:id="@+id/username"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/comments" />
+
+
+</LinearLayout>

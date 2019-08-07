@@ -1,0 +1,330 @@
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/card_margin"
+            android:padding="5dp"
+            >
+
+            <!--<TextView-->
+            <!--android:id="@+id/collection_id_label"-->
+            <!--android:layout_marginStart="@dimen/margin_20"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="@dimen/album_title_padding"-->
+            <!--android:paddingRight="@dimen/album_title_padding"-->
+            <!--android:paddingTop="@dimen/album_title_padding"-->
+            <!--android:text="@string/collection_id"-->
+            <!--android:textColor="@color/album_title"-->
+            <!--android:textSize="@dimen/album_title" />-->
+           <!-- <TextView
+                android:id="@+id/collection_id"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/collection_id"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold"/>-->
+
+            <TextView
+                android:id="@+id/fertilizerLabel"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fertilizer"
+                android:paddingLeft="8dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/fertilizer"
+                android:textColor="@color/orange"
+
+                android:text="@string/fertilizer"
+                android:layout_toRightOf="@+id/fertilizerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="4dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title"
+
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/uoMLabel"
+                android:text="@string/quantity"
+                android:layout_below="@id/fertilizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/year"
+                android:hint="Year"
+                android:layout_marginStart="15dp"
+                android:layout_below="@id/fertilizer"
+                android:layout_toRightOf="@+id/uoMLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+
+            <TextView
+                android:id="@+id/uoM"
+                android:hint="uom"
+                android:layout_below="@id/fertilizer"
+                android:layout_toRightOf="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/remarksLabel"
+                android:text="@string/remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/album_title"
+                android:layout_below="@id/uoM"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/remarks"
+                android:hint="remarks"
+                android:layout_toRightOf="@+id/remarksLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uoM"
+                android:paddingLeft="4dp"
+                android:layout_marginStart="15dp"
+
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <!--  <TextView
+                  android:id="@+id/count"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/title"
+                  android:paddingBottom="@dimen/songs_count_padding_bottom"
+                  android:paddingLeft="@dimen/album_title_padding"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:textSize="@dimen/songs_count" />-->
+
+            <!-- <ImageView
+                 android:id="@+id/overflow"
+                 android:layout_width="@dimen/ic_album_overflow_width"
+                 android:layout_height="@dimen/ic_album_overflow_height"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerInParent="true"
+                 android:layout_marginEnd="@dimen/margin_20"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/arrow_right" />-->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/card_margin"
+            >
+
+
+            <TextView
+                android:id="@+id/fertilizerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fertilizer"
+                android:paddingLeft="8dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/fertilizer"
+                android:textColor="@color/orange"
+                android:maxWidth="120dp"
+                android:layout_toRightOf="@+id/fertilizerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fertilizer"
+                android:paddingLeft="4dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title"
+
+                android:layout_marginStart="14dp"/>
+
+            <TextView
+                android:id="@+id/uoMLabel"
+                android:text="@string/uoM"
+                android:layout_marginStart="52dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:layout_toRightOf="@+id/fertilizer"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/uoM"
+                android:hint="@string/uoM"
+                android:layout_marginStart="50dp"
+                android:layout_toRightOf="@+id/uoMLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:textColor="@color/orange"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/year1Label"
+                android:text="year1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fertilizerLabel"
+                android:paddingLeft="8dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textStyle="bold"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/year"
+                android:hint="year"
+                android:layout_toRightOf="@+id/year1Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fertilizer"
+                android:layout_marginStart="42dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/remarksLabel"
+                android:text="remarks"
+                android:layout_marginStart="52dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:layout_toRightOf="@+id/year1"
+                android:layout_below="@id/year6And7"
+                android:textColor="@color/album_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/remarks"
+                android:hint="remarks"
+                android:layout_toRightOf="@+id/remarksLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/orange"
+                android:layout_marginStart="30dp"
+                android:layout_below="@id/year"
+                android:paddingLeft="4dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+
+
+            &lt;!&ndash;  <TextView
+                  android:id="@+id/count"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/title"
+                  android:paddingBottom="@dimen/songs_count_padding_bottom"
+                  android:paddingLeft="@dimen/album_title_padding"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:textSize="@dimen/songs_count" />&ndash;&gt;\
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/textViewPowers"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>-->
+
+

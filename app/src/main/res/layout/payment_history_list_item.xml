@@ -1,0 +1,996 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="4dp"
+
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+            <!--
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/bkg_card"
+                        android:text="contact det"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"/>-->
+
+            <TextView
+                android:id="@+id/fertilizerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title"
+                android:text="@string/ffb_qty"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+
+
+            <TextView
+                android:id="@+id/dateOfPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/fertilizerLabel"
+                android:layout_marginLeft="200dp"
+                android:textColor="@color/orange"
+                android:text="Email"
+                android:textSize="@dimen/album_title" />
+
+            <TextView
+
+                android:id="@+id/uoMLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fertilizerLabel"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/adhoc_rate"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount"
+                android:text="Email"
+                android:layout_below="@id/fertilizerLabel"
+                android:textSize="@dimen/album_title"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="150dp"
+                android:layout_alignBaseline="@id/uoMLabel"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/year1Label"
+                android:text="@string/invoice_rate"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold"
+                android:layout_below="@id/uoMLabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bankAccountNumber"
+                android:text="Email"
+                android:layout_below="@id/uoMLabel"
+                android:textSize="@dimen/album_title"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="200dp"
+                android:textColor="@color/orange"
+                android:layout_alignBaseline="@id/year1Label"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/year2Label"
+                android:text="@string/gr_amount"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold"
+                android:layout_below="@id/year1Label"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bankHolderName"
+                android:text="Email"
+                android:layout_below="@id/year1Label"
+                android:textSize="@dimen/album_title"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="50dp"
+                android:layout_alignBaseline="@id/year2Label"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/year3Label"
+                android:layout_below="@id/year2Label"
+                android:text="@string/memo"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bankName"
+                android:text="@string/issue_identified"
+                android:textColor="@color/orange"
+                android:layout_below="@id/year2Label"
+                android:textSize="@dimen/album_title"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="50dp"
+                android:layout_alignBaseline="@id/year3Label"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/year4And51Label"
+                android:text="@string/amount"
+                android:layout_below="@id/year3Label"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount1"
+                android:layout_below="@id/year3Label"
+                android:textSize="@dimen/album_title"
+                android:layout_marginTop="20dp"
+                android:text="@string/recommended_by"
+                android:layout_marginLeft="200dp"
+                android:layout_alignBaseline="@id/year4And51Label"/>
+           <!-- <TextView
+
+                android:id="@+id/year6And7Label"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recommended_on"
+
+                android:layout_below="@id/year4And51Label"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/year6And7"
+                android:text="Email"
+                android:layout_below="@id/year4And51Label"
+                android:textSize="@dimen/album_title"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/orange"
+                android:layout_marginLeft="200dp"
+                android:layout_alignBaseline="@id/year6And7Label"/>-->
+        </RelativeLayout>
+
+
+        <!--  <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/card_margin"
+              >
+
+
+              <TextView
+                  android:id="@+id/fertilizerLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/plot_code"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+
+                  android:textColor="@color/album_title"
+                  android:textStyle="bold"
+                  android:textSize="@dimen/album_title"
+                  />
+              <TextView
+                  android:id="@+id/fertilizer"
+                  android:layout_marginStart="170dp"
+                  android:textColor="@color/orange"
+                  android:layout_toRightOf="@+id/fertilizerLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Text "
+                  android:paddingLeft="4dp"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textSize="@dimen/album_title"
+                  />
+
+              <TextView
+                  android:id="@+id/uoMLabel"
+                  android:layout_below="@id/fertilizerLabel"
+                  android:text="@string/recommendedorfertilizer"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/album_title_padding"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textColor="@color/album_title"
+
+                  android:textStyle="bold"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/uoM"
+                  android:layout_marginStart="10dp"
+                  android:hint="@string/uoM"
+                  android:layout_below="@id/fertilizerLabel"
+                  android:layout_toRightOf="@+id/uoMLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="4dp"
+                  android:textColor="@color/orange"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/year1Label"
+                  android:text="@string/dosage"
+                  android:layout_marginTop="8dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/uoMLabel"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textStyle="bold"
+                  android:textColor="@color/album_title"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/year1"
+                  android:hint="year1"
+                  android:layout_marginStart="145dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_toRightOf="@+id/year1Label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/uoMLabel"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textSize="@dimen/album_title" />
+
+              <TextView
+                  android:id="@+id/year17Above"
+                  android:layout_marginTop="8dp"
+                  android:layout_toRightOf="@+id/year1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:hint="year17"
+                  android:layout_below="@id/uoMLabel"
+                  android:paddingLeft="4dp"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:layout_marginStart="0dp"
+                  android:textSize="@dimen/album_title" />
+
+
+              &lt;!&ndash;  <TextView
+                    android:id="@+id/count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:paddingBottom="@dimen/songs_count_padding_bottom"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:textSize="@dimen/songs_count" />&ndash;&gt;\
+              <TextView
+                  android:id="@+id/year2Label"
+
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/comments"
+                  android:layout_below="@id/year17Above"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textColor="@color/album_title"
+                  android:textStyle="bold"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/year2"
+                  android:layout_marginStart="160dp"
+                  android:textColor="@color/orange"
+                  android:layout_toRightOf="@+id/year2Label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="year2"
+                  android:paddingLeft="4dp"
+                  android:layout_below="@id/year17Above"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textSize="@dimen/album_title" />
+
+              <TextView
+                  android:id="@+id/year3Label"
+                  android:layout_below="@id/year2Label"
+                  android:text="@string/issue_identified"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/album_title_padding"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textColor="@color/album_title"
+
+                  android:textStyle="bold"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/year3"
+                  android:hint="year3"
+                  android:layout_marginStart="130dp"
+                  android:layout_toRightOf="@+id/year3Label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="4dp"
+                  android:textColor="@color/orange"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textSize="@dimen/album_title"
+                  android:layout_below="@id/year2Label"/>
+              <TextView
+                  android:id="@+id/year4And51Label"
+                  android:text="@string/recommended_by"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/year3Label"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textStyle="bold"
+                  android:textColor="@color/album_title"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/year4And5"
+                  android:hint="year4And5"
+                  android:layout_marginStart="120dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_toRightOf="@+id/year4And51Label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/year3Label"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textSize="@dimen/album_title" />
+
+              <TextView
+                  android:id="@+id/year6And7Label"
+
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/recommended_on"
+                  android:paddingLeft="@dimen/album_title_padding"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+
+                  android:textColor="@color/album_title"
+                  android:textStyle="bold"
+                  android:layout_below="@id/year4And51Label"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/year6And7"
+                  android:layout_toRightOf="@+id/year6And7Label"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="year6"
+                  android:layout_marginStart="115dp"
+                  android:layout_below="@id/year4And51Label"
+                  android:paddingLeft="4dp"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textSize="@dimen/album_title" />
+
+  &lt;!&ndash;
+
+              <TextView
+                  android:id="@+id/year8To17Label"
+                  android:text="Plot Size"
+                  android:layout_marginTop="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/year6And7Label"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textStyle="bold"
+                  android:textColor="@color/album_title"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/year8To17"
+                  android:hint="year8To17"
+                  android:layout_marginTop="20dp"
+                  android:layout_toRightOf="@+id/year8To17Label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/year6And7Label"
+                  android:layout_marginStart="24dp"
+                  android:textColor="@color/orange"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/remarksLabel"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginStart="80dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Remarks"
+                  android:paddingLeft="@dimen/album_title_padding"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:layout_toRightOf="@+id/year1"
+                  android:layout_below="@id/year6And7Label"
+                  android:textColor="@color/album_title"
+                  android:textStyle="bold"
+                  android:textSize="@dimen/album_title" />
+              <TextView
+                  android:id="@+id/remarks"
+                  android:layout_marginTop="20dp"
+                  android:layout_toRightOf="@+id/remarksLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:hint="remarks"
+                  android:textColor="@color/orange"
+                  android:layout_marginStart="30dp"
+                  android:layout_below="@id/year6And7Label"
+                  android:paddingLeft="4dp"
+                  android:paddingRight="@dimen/album_title_padding"
+                  android:paddingTop="@dimen/album_title_padding"
+                  android:textSize="@dimen/album_title" />
+
+  &ndash;&gt;
+
+
+
+          </RelativeLayout>-->
+        <TextView
+            android:id="@+id/textViewPowers"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
+
+
+<!--
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="@dimen/margin_10"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_10">
+
+          &lt;!&ndash;  <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/ledgerItem_label"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:text="@string/ledger_item"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/ledgerItem"
+                android:layout_marginStart="75dp"
+                android:layout_toRightOf="@+id/ledgerItem_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:hint="@string/ledger_item"
+                android:textSize="@dimen/album_title" />&ndash;&gt;
+
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/dateOfPaymentLabel"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dop"
+
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/dateOfPayment"
+                android:layout_marginStart="42dp"
+                android:layout_toRightOf="@+id/dateOfPaymentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/dop"
+
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/amountLabel"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:layout_below="@id/dateOfPayment"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/amount"
+                android:layout_toRightOf="@+id/amountLabel"
+                android:layout_marginStart="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/amount"
+                android:layout_below="@id/dateOfPayment"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/bankAccountNumberLabel"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_ac_no"
+                android:layout_below="@id/amount"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/bankAccountNumber"
+                android:layout_toRightOf="@+id/bankAccountNumberLabel"
+                android:layout_marginStart="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/bank_ac_no"
+                android:layout_below="@id/amount"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/bankHolderNameLabel"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_ac_holder"
+                android:layout_below="@id/bankAccountNumber"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/bankHolderName"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@+id/bankHolderNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/bank_ac_holder"
+                android:layout_below="@id/bankAccountNumber"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/bankNameLabel"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_name"
+                android:layout_below="@id/bankHolderName"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/bankName"
+                android:layout_marginStart="77dp"
+                android:layout_toRightOf="@+id/bankNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/bank_name"
+                android:layout_below="@id/bankHolderName"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/amountLabel1"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_name"
+                android:layout_below="@id/bankNameLabel"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title" />
+            <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/amount1"
+                android:layout_marginStart="77dp"
+                android:layout_toRightOf="@+id/amountLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/bank_name"
+                android:layout_below="@id/bankNameLabel"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+          &lt;!&ndash;  <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                android:id="@+id/show_more"
+                android:layout_toRightOf="@+id/bankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_dow"
+                android:layout_below="@id/bankHolderName"
+                android:layout_marginStart="30dp"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+&ndash;&gt;
+            <TextView
+                android:id="@+id/textViewPowers"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+       android:visibility="gone"
+
+        android:layout_below="@+id/linear">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/margin_10"
+            android:layout_margin="@dimen/card_margin"
+            android:elevation="3dp"
+
+            card_view:cardCornerRadius="@dimen/card_album_radius">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_10"
+                android:background="@color/transparent_blue">
+
+                <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                    android:id="@+id/collection"
+                    android:text="@string/collections_total"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+
+                    android:textColor="@color/album_title"
+                    android:textSize="@dimen/album_title" />
+                <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                    android:id="@+id/collectionAmt"
+                    android:text="29000"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:hint="@string/ledger_item"
+                    android:textSize="@dimen/album_title" />
+
+                <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                    android:id="@+id/Labour"
+                    android:text="@string/labour_charges"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/collection"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:textColor="@color/album_title"
+                    android:textSize="@dimen/album_title" />
+                <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                    android:id="@+id/LabourCharge"
+                    android:text="-1500"
+                    android:layout_marginStart="85dp"
+                    android:layout_toRightOf="@+id/Labour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dop"
+                    android:layout_below="@id/collection"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:textSize="@dimen/album_title" />
+
+                <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                    android:id="@+id/rate"
+                    android:text="@string/rate_adjustment"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Labour"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:textColor="@color/album_title"
+                    android:textSize="@dimen/album_title" />
+                <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                    android:id="@+id/rateAmt"
+                    android:text="-8732"
+                    android:layout_toRightOf="@+id/rate"
+                    android:layout_marginStart="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/amount"
+                    android:layout_below="@id/Labour"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:textSize="@dimen/album_title" />
+                <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                    android:id="@+id/Payment"
+                    android:text="@string/transport_payment"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rate"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:textColor="@color/album_title"
+                    android:textSize="@dimen/album_title" />
+                <com.calibrage.a3ffarmerapp.Activities.CommonTextView
+                    android:id="@+id/PaymentAmt"
+                    android:text="3000"
+                    android:layout_toRightOf="@+id/Payment"
+                    android:layout_marginStart="65dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/bank_ac_no"
+                    android:layout_below="@id/rate"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:textSize="@dimen/album_title" />
+
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+-->
+   <!-- <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:id="@+id/content"
+        android:gravity="top|center_horizontal"
+        android:layout_below="@+id/linear">
+
+        <TableLayout
+            android:id="@+id/tabla_cuerpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rectangle_shape_grey_border"
+            >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/collection"
+                     android:text="Collections by total Rate\n from 2nd march to 3rd june:"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/album_title"
+                    android:padding="5dp"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                <TextView
+                    android:id="@+id/collectionAmt"
+                     android:text="29000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="57dp"
+                   android:layout_marginStart="@dimen/margin_10"
+                    android:padding="5dp"
+
+                    android:textSize="@dimen/album_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/Labour"
+                     android:text="Labour Charges:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/album_title"
+                    android:padding="5dp"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                <TextView
+                    android:id="@+id/LabourCharge"
+                        android:text="-1500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:padding="5dp"
+
+                    android:textSize="@dimen/album_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/rate"
+                    android:text="Rate Adjustment:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/album_title"
+                    android:padding="5dp"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                <TextView
+                    android:id="@+id/rateAmt"
+                    android:text="-8732"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:padding="5dp"
+
+                    android:textSize="@dimen/album_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/Payment"
+                    android:text="Transport Payment:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/album_title"
+                    android:padding="5dp"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                <TextView
+                    android:id="@+id/PaymentAmt"
+                    android:text="3000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:padding="5dp"
+                    android:textSize="@dimen/album_title"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>-->
+<!--
+</RelativeLayout>-->

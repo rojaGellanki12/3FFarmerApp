@@ -1,0 +1,89 @@
+<LinearLayout android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "Plot code"
+            android:id="@+id/ploteCode"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "46dp"
+
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:id="@+id/fertilizer"
+            android:text = "Fertilizer"
+            android:textColor = "#110202"
+            android:paddingBottom="@dimen/margin_20"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "Dosage"
+            android:id="@+id/dosage"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "Comments"
+            android:id="@+id/comments"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:id="@+id/issue"
+            android:text = "Issue"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "Recommended By"
+            android:id="@+id/recommendedBy"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "45dp"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "Recommended On"
+            android:id="@+id/recommendedOn"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+    </LinearLayout>
+</LinearLayout>

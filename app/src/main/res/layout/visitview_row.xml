@@ -1,0 +1,120 @@
+<LinearLayout android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "Plot id"
+            android:id="@+id/plotId"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:id="@+id/farmerId"
+            android:text = "farmer Id"
+            android:textColor = "#110202"
+            android:paddingBottom="@dimen/margin_20"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "farmerName"
+            android:id="@+id/farmerName"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "plotArea"
+            android:id="@+id/plotArea"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:id="@+id/plotStatus"
+            android:text = "plotStatus"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "plotVillage"
+            android:id="@+id/plotVillage"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "45dp"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "plotMandal"
+            android:id="@+id/plotMandal"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:id="@+id/plotDistrict"
+            android:text = "plotDistrict"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "comments"
+            android:id="@+id/comments"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "dateOfRequests"
+            android:id="@+id/dateOfRequests"
+            android:textColor = "#110202"
+            android:background = "@drawable/cell_shape"/>
+    </LinearLayout>
+</LinearLayout>

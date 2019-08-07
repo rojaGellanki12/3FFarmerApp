@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/linear1"
+         android:weightSum="2">
+
+         <ImageView
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:src="@drawable/arrow_left"
+             android:layout_margin="10dp"
+             android:layout_weight="0.1"
+             android:id="@+id/back"/>
+
+
+     </LinearLayout>-->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/horizontalScroll">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFertlizer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+
+            tools:listitem="@layout/fertilizer_list_item" />
+
+    </HorizontalScrollView>
+
+
+
+</RelativeLayout>
