@@ -191,27 +191,10 @@ public class GetRecommendationsActivity extends AppCompatActivity implements Ada
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                   /* try {
-                        getCustomRecommendations(fromString,toString);
-                    } catch (ParseException e) {
-                        e.printStackTrace();
-                    }*/
-                    // Toast.makeText(CollectionsActivity.this, "kiran", Toast.LENGTH_SHORT).show();
-                    //  timePeroidLinear.setVisibility(View.GONE);
-                    //     text.setVisibility(View.VISIBLE);
 
                 }
-/*
-                        if (fromString.length() <= 0) {
-                            Toast.makeText(CollectionsActivity.this, "It's empty", Toast.LENGTH_SHORT).show();
-                        }
-                        if (toString.length() <= 0) {
-                            Toast.makeText(CollectionsActivity.this, "It's empty", Toast.LENGTH_SHORT).show();
-                        }
-                      getCollections();*/
 
-               /* fromText.setText(null);
-                toText.setText(null);*/
+
             }
 
         });
@@ -630,26 +613,6 @@ public class GetRecommendationsActivity extends AppCompatActivity implements Ada
                         }
 
 
-//        StringRequest MyStringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
-//            @SuppressLint("LongLogTag")
-//            @Override
-//            public void onResponse(String response) {
-//                //This code is executed if the server responds, whether or not the response contains data.
-//                //The String 'response' contains the server's response.
-//                Log.i("LOG_RESPONSE ", response);
-//
-//                try {
-//                    JSONObject jsonObject = new JSONObject(response);
-//                    Log.d(TAG, "RESPONSE PLOT======" + jsonObject);
-//                    JSONArray alsoKnownAsArray = jsonObject.getJSONArray("listResult");
-//                    Log.i("LOG_RESPONSE PLOT", String.valueOf(alsoKnownAsArray.length()));
-//                    Log.d("data2===", "APAB0001000001");
-//                 //   parseData(jsonObject);
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                }
-
-
 
             }
         },new Response.ErrorListener() {
@@ -817,13 +780,13 @@ public class GetRecommendationsActivity extends AppCompatActivity implements Ada
                                     text.setVisibility(View.VISIBLE); //
                                     recyclerView.setVisibility(View.GONE);
                                 } else {
-// Toast.makeText(CollectionsActivity.this, "kiran", Toast.LENGTH_SHORT).show();
+
                                     text.setVisibility(View.GONE);
-// text.setVisibility(View.VISIBLE);
+
                                     try {
-                                      //  adapter.notifyDataSetChanged();
+
                                         recyclerView.invalidate();
-// recyclerView.setVisibility(View.VISIBLE);
+
                                         getCustomRecommendations(fromString, toString);
 
                                     } catch (ParseException e) {
@@ -836,10 +799,7 @@ public class GetRecommendationsActivity extends AppCompatActivity implements Ada
                                 if (toString.length() <= 0) {
                                     Toast.makeText(GetRecommendationsActivity.this, "It's empty", Toast.LENGTH_SHORT).show();
                                 }
-// getCollections();
-
-/*fromText.setText(null);
-toText.setText(null);*/
+//
                             }
 
                         });
@@ -850,15 +810,13 @@ toText.setText(null);*/
                     }
                 }
                 if(sinner_timeperiod.getSelectedItem().toString().equals("Custom Time Period")){
-// Toast.makeText(getApplicationContext(),"hiddd" , Toast.LENGTH_LONG).show();
+
                     timePeroidLinear.setVisibility(View.VISIBLE); //
 
-// subBtn.setVisibility(View.VISIBLE);
 
-//do something
                 }else {
                     timePeroidLinear.setVisibility(View.GONE);
-// subBtn.setVisibility(View.VISIBLE);
+
                 }
             }
 
